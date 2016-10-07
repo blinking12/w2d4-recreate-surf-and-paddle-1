@@ -1,0 +1,332 @@
+@import 'settings';
+// @import '../bootstrap-sass-3.3.7/assets/stylesheets/bootstrap';
+
+* {
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+}
+.header_background {
+    background: $gradientOverlay, url(https://unsplash.it/800/400/?image=1061);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+header {
+    .logo_img {
+        height: 40px;
+        width: 40px;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+    .header_logo_font {
+        display: inline-block;
+        color: $color1;
+        font-size: 16px;
+        padding-left: 10px;
+        padding-top: 20px;
+        vertical-align: middle;
+    }
+    .header_nav_font {
+        font-family: $headerFont;
+        color: $color1;
+        font-size: 18px;
+        padding-top: 30px;
+        padding-right: 50px;
+
+        a {
+            color: $color1;
+        }
+        .search_img {
+            width: 23px;
+            height: 23px;
+            padding-bottom: 5px;
+        }
+    }
+    .header_main_font {
+        color: white;
+        font-size: 80px;
+        padding-top: 150px;
+        padding-right: 10px;
+        padding-left: 10px;
+        text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    }
+    .header_minor_font {
+        color: $color1;
+        font-size: 16px;
+        padding-bottom: 150px;
+        padding-top: -20px;
+    }
+}
+main {
+    padding-top: 50px;
+
+    .main_header_font {
+        font-family: $headerFont;
+        font-size: 70px;
+        color: $color1;
+        text-transform: uppercase;
+        line-height: 70px;
+    }
+    .minor_header_font {
+        color: $color2;
+        font-size: 14px;
+        padding-top: 15px;
+        padding-left: 5px;
+        display: inline-block;
+        vertical-align: bottom;
+    }
+    .minor_date_font {
+        display: inline-block;
+        color: $color3;
+        vertical-align: bottom;
+        padding-left: 10px;
+
+    a {
+        color: $color3;
+        text-decoration: underline;
+    }
+    a:hover {
+        color: black;
+    }
+    }
+    .author_photo_one {
+        height: 40px;
+        width: 40px;
+        background: $gradientOverlay, url(https://unsplash.it/800?image=1061);
+        background-size: cover;
+        border-radius: 50%;
+        display: inline-block;
+    }
+    p {
+        padding-top: 50px;
+        padding-right: 20px;
+        font-size: 16px;
+        color: gray;
+        word-spacing: 3px;
+        font-family: $paragraphFont;
+    }
+    #second_section {
+        padding-top: 0px;
+    }
+    .breakout_quote {
+        border-left: 1px solid $color3;
+        color: $color2;
+        text-transform: uppercase;
+        padding-left: 20px;
+        margin-left: 5px;
+        font-size: 30px;
+        font-family: $paragraphFont;
+    }
+    .button_icons {
+      background-color: $color4;
+      color: white;
+      font-size: 18px;
+      padding-top: 7px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-right: 10px;
+
+      &:hover {
+        background-color: $color1;
+      }
+    }
+    .main_buttons {
+      background-color: $color3;
+      color: white;
+      padding-right: 10px;
+      display: inline-block;
+
+      &:hover {
+        background-color: $color2;
+      }
+    }
+
+    // sidebar
+    .author_photo_two {
+        margin: 0 auto;
+        height: 100px;
+        width: 100px;
+        background: $gradientOverlay, url(https://unsplash.it/800?random);
+        background-size: cover;
+        border-radius: 50%;
+        display: inline-block;
+    }
+    .sidebar_author_font {
+        color: $color2;
+        font-size: 18px;
+        padding-top: 15px;
+        font-family: $paragraphFont;
+    }
+    .sidebar_ul {
+        color: $color3;
+        font-family: $paragraphFont;
+    }
+    .sidebar_links {
+      color: $color3;
+      vertical-align: bottom;
+      padding-left: 10px;
+
+      a {
+          color: $color3;
+          text-decoration: underline;
+      }
+      a:hover {
+          color: black;
+      }
+  }
+  .sidebar_ad {
+      margin-top: 50px;
+      width: 25vw;
+      height: 25vw;
+      background: $gradientOverlay, url(https://unsplash.it/800?random);
+      background-size: cover;
+  }
+    .sidebar_heading {
+        color: $color2;
+        font-family: $headerFont;
+        text-transform: uppercase;
+        font-size: 18px;
+        margin-top: 50px;
+    }
+    #sidebar_p {
+        color: $color3;
+        font-size: 15px;
+        padding-top: 10px;
+    }
+}
+footer {
+    margin-top: 50px;
+    border-top: 1px solid $color3;
+
+    .footer_header_font {
+        font-family: $headerFont;
+        font-size: 70px;
+        color: $color1;
+        text-transform: uppercase;
+        line-height: 70px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .footer_photos {
+      height: 400px;
+
+      .photo_one {
+        height: 25vw;
+        color: $color1;
+        background:
+          $gradientOverlay,
+          url(http://unsplash.it/800?image=1052);
+          background-size: cover;
+
+          &:hover {
+            color: white;
+            position: relative;
+            background:
+              linear-gradient(
+                rgba(255, 255, 255, 0),
+                rgba(255, 255, 255, 0)
+              ),
+              url(http://unsplash.it/800?image=1052);
+              background-size: cover;
+          }
+      }
+      .photo_two {
+        height: 25vw;
+        color: $color1;
+        background:
+          $gradientOverlay,
+          url(http://unsplash.it/800?image=1052);
+          background-size: cover;
+
+          &:hover {
+            color: white;
+
+            background:
+              linear-gradient(
+                rgba(255, 255, 255, 0),
+                rgba(255, 255, 255, 0)
+              ),
+              url(http://unsplash.it/800?image=1052);
+              background-size: cover;
+          }
+      }
+      .photo_three {
+          height: 25vw;
+          color: $color1;
+          background:
+            $gradientOverlay,
+            url(http://unsplash.it/800?image=1052);
+          background-size: cover;
+
+          &:hover {
+            color: white;
+            position: relative;
+            background:
+              linear-gradient(
+                rgba(255, 255, 255, 0),
+                rgba(255, 255, 255, 0)
+              ),
+              url(http://unsplash.it/800?image=1052);
+              background-size: cover;
+          }
+      }
+      .photo_four {
+        height: 25vw;
+        color: $color1;
+        background:
+          $gradientOverlay,
+          url(http://unsplash.it/800?image=1052);
+          background-size: cover;
+
+          &:hover {
+            color: white;
+            position: relative;
+            background:
+              linear-gradient(
+                rgba(255, 255, 255, 0),
+                rgba(255, 255, 255, 0)
+              ),
+              url(http://unsplash.it/800?image=1052);
+              background-size: cover;
+          }
+      }
+      .photo_text {
+        font-family: $headerFont;
+        font-size: 35px;
+        text-transform: uppercase;
+        padding-left: 10px;
+        padding-right: 10px;
+        position: absolute;
+        bottom: 0;
+      }
+    }
+    .col-sm-6 {
+        background-color: $color1;
+        img {
+                height: 60px;
+                width: 60px;
+                margin-top: 9px;
+                margin-left: 100px;
+            }
+        .footer_bottom_font {
+            display: inline-block;
+            color: $color3;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 10px;
+            vertical-align: middle;
+        }
+        ul {
+            color: $color3;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            vertical-align: middle;
+        }
+        a {
+        color: $color3;
+        }
+    }
+}

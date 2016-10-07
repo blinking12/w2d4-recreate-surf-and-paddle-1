@@ -1,0 +1,332 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+.header_background {
+  background: linear-gradient(rgba(16, 109, 179, 0.7), rgba(16, 109, 179, 0.7)), url(https://unsplash.it/800/400/?image=1061);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header .logo_img {
+  height: 40px;
+  width: 40px;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+header .header_logo_font {
+  display: inline-block;
+  color: #083451;
+  font-size: 16px;
+  padding-left: 10px;
+  padding-top: 20px;
+  vertical-align: middle;
+}
+
+header .header_nav_font {
+  font-family: "Oswald", sans-serif;
+  color: #083451;
+  font-size: 18px;
+  padding-top: 30px;
+  padding-right: 50px;
+}
+
+header .header_nav_font a {
+  color: #083451;
+}
+
+header .header_nav_font .search_img {
+  width: 23px;
+  height: 23px;
+  padding-bottom: 5px;
+}
+
+header .header_main_font {
+  color: white;
+  font-size: 80px;
+  padding-top: 150px;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+header .header_minor_font {
+  color: #083451;
+  font-size: 16px;
+  padding-bottom: 150px;
+  padding-top: -20px;
+}
+
+main {
+  padding-top: 50px;
+}
+
+main .main_header_font {
+  font-family: "Oswald", sans-serif;
+  font-size: 70px;
+  color: #083451;
+  text-transform: uppercase;
+  line-height: 70px;
+}
+
+main .minor_header_font {
+  color: #106DB3;
+  font-size: 14px;
+  padding-top: 15px;
+  padding-left: 5px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+main .minor_date_font {
+  display: inline-block;
+  color: #9EA4A9;
+  vertical-align: bottom;
+  padding-left: 10px;
+}
+
+main .minor_date_font a {
+  color: #9EA4A9;
+  text-decoration: underline;
+}
+
+main .minor_date_font a:hover {
+  color: black;
+}
+
+main .author_photo_one {
+  height: 40px;
+  width: 40px;
+  background: linear-gradient(rgba(16, 109, 179, 0.7), rgba(16, 109, 179, 0.7)), url(https://unsplash.it/800?image=1061);
+  background-size: cover;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+main p {
+  padding-top: 50px;
+  padding-right: 20px;
+  font-size: 16px;
+  color: gray;
+  word-spacing: 3px;
+  font-family: "Gudea", sans-serif;
+}
+
+main #second_section {
+  padding-top: 0px;
+}
+
+main .breakout_quote {
+  border-left: 1px solid #9EA4A9;
+  color: #106DB3;
+  text-transform: uppercase;
+  padding-left: 20px;
+  margin-left: 5px;
+  font-size: 30px;
+  font-family: "Gudea", sans-serif;
+}
+
+main .button_icons {
+  background-color: #5E686F;
+  color: white;
+  font-size: 18px;
+  padding-top: 7px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+main .button_icons:hover {
+  background-color: #083451;
+}
+
+main .main_buttons {
+  background-color: #9EA4A9;
+  color: white;
+  padding-right: 10px;
+  display: inline-block;
+}
+
+main .main_buttons:hover {
+  background-color: #106DB3;
+}
+
+main .author_photo_two {
+  margin: 0 auto;
+  height: 100px;
+  width: 100px;
+  background: linear-gradient(rgba(16, 109, 179, 0.7), rgba(16, 109, 179, 0.7)), url(https://unsplash.it/800?random);
+  background-size: cover;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+main .sidebar_author_font {
+  color: #106DB3;
+  font-size: 18px;
+  padding-top: 15px;
+  font-family: "Gudea", sans-serif;
+}
+
+main .sidebar_ul {
+  color: #9EA4A9;
+  font-family: "Gudea", sans-serif;
+}
+
+main .sidebar_links {
+  color: #9EA4A9;
+  vertical-align: bottom;
+  padding-left: 10px;
+}
+
+main .sidebar_links a {
+  color: #9EA4A9;
+  text-decoration: underline;
+}
+
+main .sidebar_links a:hover {
+  color: black;
+}
+
+main .sidebar_ad {
+  margin-top: 50px;
+  width: 25vw;
+  height: 25vw;
+  background: linear-gradient(rgba(16, 109, 179, 0.7), rgba(16, 109, 179, 0.7)), url(https://unsplash.it/800?random);
+  background-size: cover;
+}
+
+main .sidebar_heading {
+  color: #106DB3;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-top: 50px;
+}
+
+main #sidebar_p {
+  color: #9EA4A9;
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+footer {
+  margin-top: 50px;
+  border-top: 1px solid #9EA4A9;
+}
+
+footer .footer_header_font {
+  font-family: "Oswald", sans-serif;
+  font-size: 70px;
+  color: #083451;
+  text-transform: uppercase;
+  line-height: 70px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+footer .footer_photos {
+  height: 400px;
+}
+
+footer .footer_photos .photo_one {
+  height: 25vw;
+  color: #083451;
+  background: linear-gradient(rgba(16, 109, 179, 0.7), rgba(16, 109, 179, 0.7)), url(http://unsplash.it/800?image=1052);
+  background-size: cover;
+}
+
+footer .footer_photos .photo_one:hover {
+  color: white;
+  position: relative;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(http://unsplash.it/800?image=1052);
+  background-size: cover;
+}
+
+footer .footer_photos .photo_two {
+  height: 25vw;
+  color: #083451;
+  background: linear-gradient(rgba(16, 109, 179, 0.7), rgba(16, 109, 179, 0.7)), url(http://unsplash.it/800?image=1052);
+  background-size: cover;
+}
+
+footer .footer_photos .photo_two:hover {
+  color: white;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(http://unsplash.it/800?image=1052);
+  background-size: cover;
+}
+
+footer .footer_photos .photo_three {
+  height: 25vw;
+  color: #083451;
+  background: linear-gradient(rgba(16, 109, 179, 0.7), rgba(16, 109, 179, 0.7)), url(http://unsplash.it/800?image=1052);
+  background-size: cover;
+}
+
+footer .footer_photos .photo_three:hover {
+  color: white;
+  position: relative;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(http://unsplash.it/800?image=1052);
+  background-size: cover;
+}
+
+footer .footer_photos .photo_four {
+  height: 25vw;
+  color: #083451;
+  background: linear-gradient(rgba(16, 109, 179, 0.7), rgba(16, 109, 179, 0.7)), url(http://unsplash.it/800?image=1052);
+  background-size: cover;
+}
+
+footer .footer_photos .photo_four:hover {
+  color: white;
+  position: relative;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(http://unsplash.it/800?image=1052);
+  background-size: cover;
+}
+
+footer .footer_photos .photo_text {
+  font-family: "Oswald", sans-serif;
+  font-size: 35px;
+  text-transform: uppercase;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: absolute;
+  bottom: 0;
+}
+
+footer .col-sm-6 {
+  background-color: #083451;
+}
+
+footer .col-sm-6 img {
+  height: 60px;
+  width: 60px;
+  margin-top: 9px;
+  margin-left: 100px;
+}
+
+footer .col-sm-6 .footer_bottom_font {
+  display: inline-block;
+  color: #9EA4A9;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  vertical-align: middle;
+}
+
+footer .col-sm-6 ul {
+  color: #9EA4A9;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  vertical-align: middle;
+}
+
+footer .col-sm-6 a {
+  color: #9EA4A9;
+}
