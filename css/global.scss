@@ -1,5 +1,5 @@
 @import 'settings';
-// @import '../bootstrap-sass-3.3.7/assets/stylesheets/bootstrap';
+
 
 * {
     box-sizing: border-box;
@@ -7,11 +7,12 @@
 img {
     width: 100%;
 }
+
+// header
 .header_background {
-    background: $gradientOverlay, url(https://unsplash.it/800/400/?image=1061);
+    background: $gradientOverlay2, url(https://unsplash.it/800/400/?image=1061);
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 header {
     .logo_img {
@@ -72,7 +73,7 @@ main {
     .minor_header_font {
         color: $color2;
         font-size: 14px;
-        padding-top: 15px;
+        padding-top: 20px;
         padding-left: 5px;
         display: inline-block;
         vertical-align: bottom;
@@ -83,18 +84,18 @@ main {
         vertical-align: bottom;
         padding-left: 10px;
 
-    a {
-        color: $color3;
-        text-decoration: underline;
-    }
-    a:hover {
-        color: black;
-    }
+        a {
+            color: $color3;
+            text-decoration: underline;
+        }
+        a:hover {
+            color: black;
+        }
     }
     .author_photo_one {
-        height: 40px;
-        width: 40px;
-        background: $gradientOverlay, url(https://unsplash.it/800?image=1061);
+        height: 30px;
+        width: 30px;
+        background: $gradientOverlay1, url(https://unsplash.it/800?image=838);
         background-size: cover;
         border-radius: 50%;
         display: inline-block;
@@ -106,6 +107,11 @@ main {
         color: gray;
         word-spacing: 3px;
         font-family: $paragraphFont;
+
+        a {
+            color: $color3;
+            text-decoration: underline;
+        }
     }
     #second_section {
         padding-top: 0px;
@@ -149,10 +155,9 @@ main {
         margin: 0 auto;
         height: 100px;
         width: 100px;
-        background: $gradientOverlay, url(https://unsplash.it/800?random);
+        background: $gradientOverlay1, url(https://unsplash.it/800?image=838);
         background-size: cover;
         border-radius: 50%;
-        display: inline-block;
     }
     .sidebar_author_font {
         color: $color2;
@@ -163,6 +168,15 @@ main {
     .sidebar_ul {
         color: $color3;
         font-family: $paragraphFont;
+        text-decoration: none;
+
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+    }
+    .sidebar_social_dividers {
+        opacity: .3;
     }
     .sidebar_links {
       color: $color3;
@@ -179,9 +193,9 @@ main {
   }
   .sidebar_ad {
       margin-top: 50px;
-      width: 25vw;
-      height: 25vw;
-      background: $gradientOverlay, url(https://unsplash.it/800?random);
+      width: 100%;
+      height: 30vw;
+      background: $gradientOverlay1, url(https://unsplash.it/800?image=1011);
       background-size: cover;
   }
     .sidebar_heading {
@@ -197,7 +211,8 @@ main {
         padding-top: 10px;
     }
 }
-footer {
+// footer
+.footer_header {
     margin-top: 50px;
     border-top: 1px solid $color3;
 
@@ -210,123 +225,91 @@ footer {
         padding-top: 50px;
         padding-bottom: 50px;
     }
-    .footer_photos {
-      height: 400px;
+}
+.footer_photos {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
-      .photo_one {
-        height: 25vw;
+    .photo_one, .photo_two, .photo_three, .photo_four {
+        flex: 1;
+        max-width: 100%;
+        position: relative;
         color: $color1;
-        background:
-          $gradientOverlay,
-          url(http://unsplash.it/800?image=1052);
-          background-size: cover;
-
-          &:hover {
+    }
+    .photo_one {
+        background: $gradientOverlay2, url(http://unsplash.it/800?image=660);
+        background-size: cover;
+        &:hover {
             color: white;
-            position: relative;
-            background:
-              linear-gradient(
-                rgba(255, 255, 255, 0),
-                rgba(255, 255, 255, 0)
-              ),
-              url(http://unsplash.it/800?image=1052);
-              background-size: cover;
+            background: url(http://unsplash.it/800?image=660);
+            background-size: cover;
+        }
+    }
+    .photo_two {
+        background: $gradientOverlay2, url(http://unsplash.it/800?image=817);
+        background-size: cover;
+        &:hover {
+            color: white;
+            background: url(http://unsplash.it/800?image=817);
+            background-size: cover;
+        }
+    }
+    .photo_three {
+        background: $gradientOverlay2, url(http://unsplash.it/800?image=785);
+        background-size: cover;
+        &:hover {
+            color: white;
+            background: url(http://unsplash.it/800?image=785);
+            background-size: cover;
+        }
+    }
+    .photo_four {
+        background: $gradientOverlay2, url(http://unsplash.it/800?image=766);
+        background-size: cover;
+        &:hover {
+            color: white;
+            background:url(http://unsplash.it/800?image=766);
+            background-size: cover;
           }
       }
-      .photo_two {
-        height: 25vw;
-        color: $color1;
-        background:
-          $gradientOverlay,
-          url(http://unsplash.it/800?image=1052);
-          background-size: cover;
-
-          &:hover {
-            color: white;
-
-            background:
-              linear-gradient(
-                rgba(255, 255, 255, 0),
-                rgba(255, 255, 255, 0)
-              ),
-              url(http://unsplash.it/800?image=1052);
-              background-size: cover;
-          }
-      }
-      .photo_three {
-          height: 25vw;
-          color: $color1;
-          background:
-            $gradientOverlay,
-            url(http://unsplash.it/800?image=1052);
-          background-size: cover;
-
-          &:hover {
-            color: white;
-            position: relative;
-            background:
-              linear-gradient(
-                rgba(255, 255, 255, 0),
-                rgba(255, 255, 255, 0)
-              ),
-              url(http://unsplash.it/800?image=1052);
-              background-size: cover;
-          }
-      }
-      .photo_four {
-        height: 25vw;
-        color: $color1;
-        background:
-          $gradientOverlay,
-          url(http://unsplash.it/800?image=1052);
-          background-size: cover;
-
-          &:hover {
-            color: white;
-            position: relative;
-            background:
-              linear-gradient(
-                rgba(255, 255, 255, 0),
-                rgba(255, 255, 255, 0)
-              ),
-              url(http://unsplash.it/800?image=1052);
-              background-size: cover;
-          }
-      }
-      .photo_text {
+    .photo_text {
         font-family: $headerFont;
         font-size: 35px;
         text-transform: uppercase;
-        padding-left: 10px;
-        padding-right: 10px;
         position: absolute;
         bottom: 0;
-      }
+        left: 5px;
     }
-    .col-sm-6 {
-        background-color: $color1;
-        img {
-                height: 60px;
-                width: 60px;
-                margin-top: 9px;
-                margin-left: 100px;
-            }
-        .footer_bottom_font {
-            display: inline-block;
-            color: $color3;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            padding-left: 10px;
-            vertical-align: middle;
-        }
-        ul {
-            color: $color3;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            vertical-align: middle;
-        }
-        a {
+}
+.footer_bottom {
+    background-color: $color1;
+    height: 90px;
+
+    img {
+        height: 50px;
+        width: 50px;
+    }
+    .footer_bottom_font {
         color: $color3;
-        }
+        display: inline-block;
+        padding-top: 30px;
+        padding-left: 10px;
+    }
+    ul {
+        color: $color3;
+        padding-top: 30px;
+    }
+    a {
+        color: $color3;
+    }
+}
+
+// media queries
+@media all and (max-width: 900px) {
+    .footer_photos {
+        flex-direction: column;
     }
 }
