@@ -1,6 +1,5 @@
 @import 'settings';
 
-
 * {
     box-sizing: border-box;
 }
@@ -135,7 +134,9 @@ main {
       padding-right: 10px;
       margin-right: 10px;
 
+
       &:hover {
+         transition: $hoverTransition;
         background-color: $color1;
       }
     }
@@ -146,6 +147,7 @@ main {
       display: inline-block;
 
       &:hover {
+        transition: $hoverTransition;
         background-color: $color2;
       }
     }
@@ -197,6 +199,13 @@ main {
       height: 30vw;
       background: $gradientOverlay1, url(https://unsplash.it/800?image=1011);
       background-size: cover;
+      background-position: 50% 50%;
+      &:hover {
+          color: white;
+          background:url(http://unsplash.it/800?image=1011);
+          background-size: cover;
+          background-position: 50% 50%;
+        }
   }
     .sidebar_heading {
         color: $color2;
@@ -246,6 +255,7 @@ main {
             color: white;
             background: url(http://unsplash.it/800?image=660);
             background-size: cover;
+            cursor: pointer;
         }
     }
     .photo_two {
@@ -255,6 +265,7 @@ main {
             color: white;
             background: url(http://unsplash.it/800?image=817);
             background-size: cover;
+            cursor: pointer;
         }
     }
     .photo_three {
@@ -264,17 +275,21 @@ main {
             color: white;
             background: url(http://unsplash.it/800?image=785);
             background-size: cover;
+            cursor: pointer;
         }
     }
     .photo_four {
         background: $gradientOverlay2, url(http://unsplash.it/800?image=766);
         background-size: cover;
+
         &:hover {
             color: white;
             background:url(http://unsplash.it/800?image=766);
             background-size: cover;
+            cursor: pointer;
           }
       }
+  }
     .photo_text {
         font-family: $headerFont;
         font-size: 35px;
@@ -283,7 +298,6 @@ main {
         bottom: 0;
         left: 5px;
     }
-}
 .footer_bottom {
     background-color: $color1;
     height: 90px;
@@ -308,7 +322,7 @@ main {
 }
 
 // media queries
-@media all and (max-width: 900px) {
+@media all and (max-width: 767px) {
     .footer_photos {
         flex-direction: column;
     }

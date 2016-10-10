@@ -148,6 +148,7 @@ main .button_icons {
 }
 
 main .button_icons:hover {
+  transition: 1s ease;
   background-color: #083451;
 }
 
@@ -159,6 +160,7 @@ main .main_buttons {
 }
 
 main .main_buttons:hover {
+  transition: 1s ease;
   background-color: #106DB3;
 }
 
@@ -214,6 +216,14 @@ main .sidebar_ad {
   height: 30vw;
   background: linear-gradient(rgba(16, 109, 179, 0.4), rgba(16, 109, 179, 0.4)), url(https://unsplash.it/800?image=1011);
   background-size: cover;
+  background-position: 50% 50%;
+}
+
+main .sidebar_ad:hover {
+  color: white;
+  background: url(http://unsplash.it/800?image=1011);
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 main .sidebar_heading {
@@ -269,6 +279,7 @@ main #sidebar_p {
   color: white;
   background: url(http://unsplash.it/800?image=660);
   background-size: cover;
+  cursor: pointer;
 }
 
 .footer_photos .photo_two {
@@ -280,6 +291,7 @@ main #sidebar_p {
   color: white;
   background: url(http://unsplash.it/800?image=817);
   background-size: cover;
+  cursor: pointer;
 }
 
 .footer_photos .photo_three {
@@ -291,6 +303,7 @@ main #sidebar_p {
   color: white;
   background: url(http://unsplash.it/800?image=785);
   background-size: cover;
+  cursor: pointer;
 }
 
 .footer_photos .photo_four {
@@ -302,9 +315,10 @@ main #sidebar_p {
   color: white;
   background: url(http://unsplash.it/800?image=766);
   background-size: cover;
+  cursor: pointer;
 }
 
-.footer_photos .photo_text {
+.photo_text {
   font-family: "Oswald", sans-serif;
   font-size: 35px;
   text-transform: uppercase;
@@ -339,7 +353,7 @@ main #sidebar_p {
   color: #9EA4A9;
 }
 
-@media all and (max-width: 900px) {
+@media all and (max-width: 767px) {
   .footer_photos {
     flex-direction: column;
   }
